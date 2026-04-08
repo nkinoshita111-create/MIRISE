@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>資産基盤事業 | MIRISE</title>
+<meta name="description" content="MIRISEの資産基盤事業。人生設計と資産設計の統合支援。金融サポート・不動産活用提案・統合的資産プランニング。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+<div class="nav-inner">
+<a href="index.html" class="nav-logo">MI<span>R</span>ISE</a>
+<div class="hamburger" onclick="this.nextElementSibling.classList.toggle('open')">
+<span></span><span></span><span></span>
+</div>
+<ul class="nav-links">
+<li><a href="index.html">TOP</a></li>
+<li><a href="business.html">事業紹介</a></li>
+<li><a href="inner-vision-lab.html">未来設計事業</a></li>
+<li><a href="asset-business.html" class="active">資産基盤事業</a></li>
+<li><a href="privacy.html">お問い合わせ</a></li>
+</ul>
+</div>
+</nav>
+
+<section class="hero" style="min-height:60vh;">
+<div>
+<p class="section-label fade-in">BUSINESS 02</p>
+<p class="hero-tagline fade-in" style="font-size:clamp(1.5rem,4vw,2.5rem)">人生設計と資産設計の<br>統合支援。</p>
+<p class="hero-sub fade-in">夢を支える、経済的な土台を設計する</p>
+</div>
+</section>
+
+<section class="section">
+<div class="fade-in">
+<p class="section-label">CONCEPT</p>
+<h2 class="section-title">ビジョンを描くだけでなく、<br>それを支える基盤を。</h2>
+<p class="section-text">
+未来設計事業で描いたビジョンを実現するには、<br>
+それを支える経済的な土台が必要です。<br><br>
+MIRISEは、人生設計と資産設計を分けて考えるのではなく、<br>
+統合的にサポートすることで、<br>
+あなたの未来上昇を確かなものにします。
+</p>
+</div>
+</section>
+
+<section class="section">
+<div class="fade-in">
+<p class="section-label">SERVICES</p>
+<h2 class="section-title">サービス内容</h2>
+
+<div class="service-item">
+<p class="service-num">01</p>
+<h3 class="service-title">金融サポート</h3>
+<p class="service-desc">
+あなたの人生設計に合わせた、最適な金融プランをご提案。<br>
+保険・資産運用・リスク管理など、ライフステージに応じた<br>
+包括的な金融サポートを提供します。
+</p>
+</div>
+
+<div class="service-item">
+<p class="service-num">02</p>
+<h3 class="service-title">不動産活用提案</h3>
+<p class="service-desc">
+資産としての不動産の活用方法をご提案。<br>
+購入・運用・相続対策まで、<br>
+あなたのビジョンに沿った不動産戦略を一緒に設計します。
+</p>
+</div>
+
+<div class="service-item">
+<p class="service-num">03</p>
+<h3 class="service-title">統合的資産プランニング</h3>
+<p class="service-desc">
+金融・不動産・事業を横断した統合的な資産設計。<br>
+短期の資金計画から長期の資産形成まで、<br>
+人生のあらゆるフェーズに対応する設計図を描きます。
+</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="fade-in">
+<p class="section-label">APPROACH</p>
+<h2 class="section-title">MIRISEだからできること</h2>
+<div class="card-grid">
+<div class="card">
+<p class="card-num">01</p>
+<h3 class="card-title">ビジョンから逆算する</h3>
+<p class="card-desc">数字だけの資産計画ではなく、あなたの「どう生きたいか」から逆算した資産設計を行います。</p>
+</div>
+<div class="card">
+<p class="card-num">02</p>
+<h3 class="card-title">分断しない</h3>
+<p class="card-desc">保険は保険、不動産は不動産、ではなく。人生全体を見渡した統合的なプランニングを提供します。</p>
+</div>
+<div class="card">
+<p class="card-num">03</p>
+<h3 class="card-title">伴走し続ける</h3>
+<p class="card-desc">一度の提案で終わりではなく、ライフステージの変化に合わせて継続的にサポートします。</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="section">
+<div class="cta-box fade-in">
+<p class="cta-title">まずはお気軽にご相談ください</p>
+<p style="font-size:14px;color:var(--text-secondary);margin-bottom:1.5rem;">資産設計のご相談やサービスの詳細について、ご質問にお答えします。</p>
+<a href="privacy.html#contact" class="cta-btn">お問い合わせ</a>
+</div>
+</div>
+
+<footer class="footer">
+<p class="footer-brand">MIRISE</p>
+<div class="footer-links">
+<a href="index.html">TOP</a>
+<a href="business.html">事業紹介</a>
+<a href="inner-vision-lab.html">未来設計事業</a>
+<a href="privacy.html">プライバシーポリシー</a>
+</div>
+<p class="footer-copy">&copy; 2026 MIRISE. All rights reserved.</p>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
